@@ -7,11 +7,4 @@
     - name: Create a test file
       file:
         path: /tmp/ansible-test.txt
-        state: touch
-
-        
-    - name: Copy hello.txt
-      copy:
-        src: ../files/hello.txt
-        dest: /tmp/hello.txt
-        mode: "0644"
+        state: directory
