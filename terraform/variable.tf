@@ -14,3 +14,8 @@ variable "zone" {
   type        = string
   default     = "us-west1-b"
 }
+
+variable "ssh_public_key" {
+  description = "Public SSH key used to access the Ansible nodes"
+  type        = string
+}
